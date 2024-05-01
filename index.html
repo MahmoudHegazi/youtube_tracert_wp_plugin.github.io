@@ -18,7 +18,8 @@
 
 <div class="module module-home-video">
     <span class="module-strip">Latest Product Video</span>
-    <div id="demo" data_highest_second="0" data-width="0" data-real-index="30" data-dur="88"></div>
+    <!-- <div id="demo" data_highest_second="0" data-width="0" data-real-index="30" data-dur="88"></div> -->
+    <div id="demo" data_highest_second="0" data-width="0" data-real-index="0" data-dur="88"></div>
 </div>
 
 <script>
@@ -111,8 +112,8 @@ let ob = {
             height: '360',
             width: '640',
             videoId: 'ksdi3axILoI',
-            /*playerVars: {'start': Math.round(myvideo.getAttribute('data-real-index') - .5)},*/
-            playerVars: {'start': 0},
+            playerVars: {'start': Math.round(myvideo.getAttribute('data-real-index') - .5)},
+            /*playerVars: {'start': 0},*/
             events: {
                 'onStateChange': onPlayerStateChange
             }
